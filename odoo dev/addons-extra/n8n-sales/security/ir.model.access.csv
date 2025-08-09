@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_n8n-sales_n8n-sales,n8n-sales.n8n-sales,model_n8n-sales_n8n-sales,base.group_user,1,1,1,1

@@ -8,7 +8,7 @@ RUN chown -R odoo:odoo /mnt/extra-addons
 
 # ==== Parte 2: Instalar Jupyter y librerías ====
 RUN apt-get update && apt-get install -y \
-    python3-pip python3-dev build-essential \
+    python3-pip python3-dev build-essential git \
     && pip3 install --upgrade pip \
     && pip3 install jupyterlab ipython ipykernel pandas requests odoorpc \
     && apt-get clean

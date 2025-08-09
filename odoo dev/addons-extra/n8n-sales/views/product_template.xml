@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_template_form_view_n8n_inherit" model="ir.ui.view">
+            <field name="name">product.template.form.n8n.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="n8n Debug" name="n8n_automation">
+                        <!-- Grupo básico primero -->
+                        <group string="Producto automatizacion" invisible="is_digital_product">
+                            <field name="is_digital_product"/>
+                            <field name="digital_product_type"/>
+                        </group>
+                        
+                        <!-- Grupo problemático separado -->
+                        <group string="Debug - Campo Problemático">
+                            <field name="integracion_con_odoo_cliente"/>
+                            <field name="administrado_odoo"/>
+                        </group>
+                
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
